@@ -6,11 +6,19 @@ import Book, {books} from './Book';
     return (
       <section className='booklist'>
         {books.map((book) => {
-                const {title, aurthur, img, id} = book;
-                // console.log(book)
+                // const {title, aurthur, img, id} = book;
+                console.log(book)
                 return(
                     // <Book title= {title} aurthur = {aurthur} img = {img} key = {id} />
                     <Book book= {book} key= {book.id} />
+                    
+                    
+                    
+                    // another way to access the objects values is use of spread opperator
+                    
+                    // <Book {...book} key= {book.id} />
+
+
 
                 );
             })}
